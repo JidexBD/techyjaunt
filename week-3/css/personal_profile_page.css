@@ -1,0 +1,76 @@
+/* resets and defaults  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  background-color: rgba(110, 40, 40, 0.719);
+}
+
+h1,
+h2,
+h3 {
+  font-family: cursive;
+  color: rgba(249, 253, 10, 0.945);
+  margin-bottom: 2rem;
+}
+
+header {
+  padding: 2rem;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 4rem;
+}
+
+.about {
+  padding: 3rem;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.about h2 {
+  font-size: 2.8rem;
+}
+
+.about p {
+  font-size: 1.8rem;
+}
+
+.interests {
+  padding: 2rem;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.interests h2 {
+  font-size: 2.8rem;
+}
+
+ul {
+  padding: 2rem;
+  border: 1px solid rgb(51, 38, 38);
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+img {
+  margin-bottom: 2rem;
+}
+a {
+  text-decoration: none;
+  font-size: 1.8rem;
+}

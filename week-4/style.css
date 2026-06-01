@@ -1,0 +1,263 @@
+/* variable */
+:root {
+  /* color */
+  --pb: #674ab0;
+  --bpg: hsl(257, 40%, 49%);
+  --lp: hsl(300, 69%, 71%);
+  --w: #fefefe;
+  --dn: #05222f;
+  --ba: #0896f1;
+  /* font-family */
+  --ff1: "Poppins", sans-serif;
+  --ff2: "Open Sans", sans-serif;
+}
+
+/* resets and defaults  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--ff1);
+  color: var(--tc);
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+  background-color: var(--bpg);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+a {
+  text-decoration: none;
+}
+/* content */
+.content {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+}
+
+/* mobile */
+header {
+  padding: 3rem;
+  margin-bottom: 5rem;
+  z-index: 4;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 4;
+}
+
+nav img {
+  width: 50%;
+}
+
+/* main */
+main {
+  padding: 3rem;
+  color: white;
+  z-index: 4;
+}
+
+/* hero */
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+/* left */
+.left {
+  z-index: 4;
+}
+
+/* right */
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+
+.right h1 {
+  font-size: 3rem;
+  text-align: center;
+  width: 380px;
+  font-family: var(--ff1);
+  font-weight: 600;
+}
+
+.right p {
+  font-size: 1.8rem;
+  text-align: center;
+  font-family: var(--ff2);
+  font-weight: 400;
+}
+
+.right button {
+  font-family: var(--ff2);
+  font-weight: 600;
+  padding: 2rem 7rem;
+  font-size: 1.8rem;
+  background-color: var(--w);
+  border: none;
+  border-radius: 38px;
+  color: var(--pb);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+button:hover,
+button:active {
+  background-color: var(--lp);
+  color: white;
+}
+
+/* footer */
+footer {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 4;
+}
+
+footer a {
+  color: white;
+
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+footer a:active,
+footer a:hover {
+  color: var(--lp);
+}
+/* decoration */
+.dec {
+  background-image: url("/huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+  z-index: 1;
+  position: absolute;
+}
+
+/* tab */
+@media (min-width: 768px) {
+  nav img {
+    width: 30%;
+  }
+
+  .right h1 {
+    font-size: 4rem;
+    text-align: center;
+    width: 420px;
+  }
+
+  .right p {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+/* 1024 */
+@media (min-width: 1280px) {
+  nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  nav img {
+    width: 20%;
+  }
+
+  /* main */
+  main {
+    padding: 3rem 8rem;
+    color: white;
+  }
+
+  /* hero */
+  .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  /* left */
+  .left img {
+    width: 100%;
+  }
+
+  /* right */
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .right h1 {
+    font-size: 3rem;
+    text-align: left;
+    width: 390px;
+    left: 1px;
+  }
+
+  .right p {
+    font-size: 1.8rem;
+    text-align: left;
+    width: 400px;
+  }
+
+  /* footer */
+  footer {
+    padding: 3rem;
+    display: flex;
+    justify-content: right;
+    gap: 2rem;
+  }
+
+  /* decoration */
+  .dec {
+    background-image: url("/huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+    pointer-events: none;
+  }
+}

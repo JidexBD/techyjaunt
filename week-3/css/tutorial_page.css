@@ -1,0 +1,95 @@
+/* resets and defaults  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: cursive;
+}
+
+header {
+  padding: 2rem;
+  border: 2px solid grey;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 2rem;
+}
+
+.description {
+  background-color: gray;
+  padding: 2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.description p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.description h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.description ul {
+  margin-bottom: 2rem;
+  border: 1px solid white;
+  padding: 2rem;
+}
+.description ul li {
+  font-size: 1.8rem;
+  list-style: none;
+}
+
+.instructions {
+  padding: 2rem;
+  border: 2px solid grey;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.instructions h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.instructions ol {
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid grey;
+  border-radius: 8px;
+}
+
+.instructions ol li h3 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.instructions ol li p {
+  font-size: 1.2rem;
+}
